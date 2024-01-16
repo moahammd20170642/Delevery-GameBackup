@@ -25,11 +25,11 @@ public class AddSystem : MonoBehaviour
     public  string rewardedId = "ca-app-pub-4935788923123536/4809120301";
     //string nativeId = "ca-app-pub-3940256099942544/2247696110";
 
-    //#elif UNITY_IPHONE
-    //    string bannerId = "ca-app-pub-3940256099942544/2934735716";
-    //    string interId = "ca-app-pub-3940256099942544/4411468910";
-    //    string rewardedId = "ca-app-pub-3940256099942544/1712485313";
-    //    string nativeId = "ca-app-pub-3940256099942544/3986624511";
+    #elif UNITY_IPHONE
+       string bannerId = "ca-app-pub-3940256099942544/2934735716";
+        string interId = "ca-app-pub-3940256099942544/4411468910";
+       string rewardedId = "ca-app-pub-3940256099942544/1712485313";
+       //string nativeId = "ca-app-pub-3940256099942544/3986624511";
 
 #endif
    //here
