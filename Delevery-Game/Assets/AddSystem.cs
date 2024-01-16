@@ -69,8 +69,9 @@ public class AddSystem : MonoBehaviour
         {
 
             rewardAddImage.SetActive(false);
+            loadScreen.SetActive(false);
         }
-        loadScreen.SetActive(false);
+    
         //ShowCoins();
         MobileAds.RaiseAdEventsOnUnityMainThread = true;
         MobileAds.Initialize(initStatus => {
@@ -78,12 +79,12 @@ public class AddSystem : MonoBehaviour
             print("Ads Initialised !!");
             LoadBannerAd();
 
+            LoadInterstitialAd();
+       
 
             if (SceneManager.GetActiveScene().buildIndex == 0)
             {
-                LoadInterstitialAd();
                 LoadRewardedAd();
-
             }
 
         });
@@ -235,7 +236,7 @@ public class AddSystem : MonoBehaviour
         if (interstitialAd != null && interstitialAd.CanShowAd())
         {
             interstitialAd.Show();
-             Adds.addShowed =true ;
+        /*     Adds.addShowed =true*/ ;
 
         }
         else
