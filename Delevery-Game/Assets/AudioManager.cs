@@ -6,8 +6,9 @@ public class AudioManager : MonoBehaviour
 {
     // Start is called before the first frame update 
     public AudioSource pickupSound;
-    public AudioSource dropdownsound; 
-
+    public AudioSource dropdownsound;
+    public AudioSource taskFaild;
+         
     public void PlayPickUP()
     {
         pickupSound.Play();
@@ -18,5 +19,8 @@ public class AudioManager : MonoBehaviour
         dropdownsound.Play();   
     }
 
-
+    public void playdTaskFaild()
+    {
+        taskFaild.Play();
+    }
 }

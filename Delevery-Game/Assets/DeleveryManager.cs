@@ -199,8 +199,8 @@ public class DeleveryManager : MonoBehaviour
         Debug.Log("hhhhhhhhhhhh");
         CreatNewTask();
         timeText.alpha = 0.0f;  
-
-
+        AudioManager.playdTaskFaild();
+        UIManager.TaskFaild();
 
         //TaskFaild=false;    
     }
