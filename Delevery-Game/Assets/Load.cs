@@ -6,12 +6,16 @@ using UnityEngine.UI;
 using TMPro;
 public class Load : MonoBehaviour
 {
+    public Slider speedSlider;
+    public Slider AccelerationSlider;
+
     public AddSystem AddSystem;
     public List<GameObject> imageObjects;
     public   int currentImageIndex = 0;
 
     public  Button Go, buy;
-
+    public float maxspeed = 80;
+    public float maxacceleration = 30;
     public int CurrentCoins;
    public CoinsManager CoinsManager;
     public TextMeshProUGUI pricetext;
@@ -58,9 +62,11 @@ public class Load : MonoBehaviour
     private void ShowCurrentImage()
     {
         string carname = imageObjects[currentImageIndex].GetComponent<Car>().carName;
-
+        float speed = imageObjects[currentImageIndex].GetComponent<Car>().speed;
+        float acceleration = imageObjects[currentImageIndex].GetComponent<Car>().accelaration;
         imageObjects[currentImageIndex].SetActive(true);
 
+        UpdateSliders(speed, acceleration);
 
         if (PlayerPrefs.GetInt(carname, 0) == 1)/////car is owned
         {
@@ -83,7 +89,14 @@ public class Load : MonoBehaviour
 
 
     }
-    
+
+    public void UpdateSliders(float speed, float acceleration)
+    {
+        speedSlider.value = Mathf.Clamp01(speed / maxspeed); // Adjust maxSpeed based on your requirements
+        AccelerationSlider.value = Mathf.Clamp01(acceleration / maxacceleration); // Adjust maxAcceleration based on your requirements
+    }
+
+
     public void Buycar()
     {
         CurrentCoins=PlayerPrefs.GetInt(prefs.coins, 0);    

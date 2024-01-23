@@ -20677,14 +20677,14 @@ MonoBehaviour:
   drivableSurface:
     serializedVersion: 2
     m_Bits: 64
-  MaxSpeed: 50
-  accelaration: 20
+  MaxSpeed: 58
+  accelaration: 24
   turn: 10
   gravity: 7
   downforce: 5
   AirControl: 0
   kartLike: 0
-  driftMultiplier: 1.5
+  driftMultiplier: 2
   rb: {fileID: 9020478676921128027}
   carBody: {fileID: 2030135618042214738}
   frictionCurve:

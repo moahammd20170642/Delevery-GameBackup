@@ -10622,7 +10622,7 @@ MonoBehaviour:
   downforce: 5
   AirControl: 0
   kartLike: 0
-  driftMultiplier: 1.5
+  driftMultiplier: 2
   rb: {fileID: 7406042388090453002}
   carBody: {fileID: 4569878182895944259}
   frictionCurve:
