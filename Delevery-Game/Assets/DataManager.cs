@@ -34,7 +34,7 @@ public class DataManager : MonoBehaviour
         Coins.Add(20);
         Coins.Add(21);
 
-        Duration.Add(7);
+        Duration.Add(15);
         Duration.Add(15);
         Duration.Add(15);
         Duration.Add(13);

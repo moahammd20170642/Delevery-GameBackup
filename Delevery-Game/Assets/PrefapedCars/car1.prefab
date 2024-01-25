@@ -20984,7 +20984,7 @@ MonoBehaviour:
   drivableSurface:
     serializedVersion: 2
     m_Bits: 64
-  MaxSpeed: 55
+  MaxSpeed: 37
   accelaration: 23
   turn: 10
   gravity: 7
