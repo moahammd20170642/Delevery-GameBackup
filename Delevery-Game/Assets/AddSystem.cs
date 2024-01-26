@@ -9,6 +9,7 @@ using JetBrains.Annotations;
 
 public class AddSystem : MonoBehaviour
 {
+    public ScenesLoader ScenesLoader;
     public GameObject loadScreen;
     public CoinsManager Coinsmanager;
     public GameObject rewardAddImage;
@@ -16,13 +17,13 @@ public class AddSystem : MonoBehaviour
     public bool addshowed = false;  
     //public TextMeshProUGUI totalCoinsTxt;
 
-    public string appId = "ca-app-pub-4935788923123536~8596337980";// "ca-app-pub-3940256099942544~3347511713";
+   string appId = "ca-app-pub-4935788923123536~7781382516";// "ca-app-pub-3940256099942544~3347511713";
     
 
 #if UNITY_ANDROID
-    public string bannerId = "ca-app-pub-4935788923123536/2374528655";
-    public  string interId = "ca-app-pub-4935788923123536/1277069403";
-    public  string rewardedId = "ca-app-pub-4935788923123536/4809120301";
+  string bannerId = "ca-app-pub-4935788923123536/9529578454";
+  string interId = "ca-app-pub-4935788923123536/2218898798";
+  string rewardedId = "ca-app-pub-4935788923123536/1459516749";
     //string nativeId = "ca-app-pub-3940256099942544/2247696110";
 
     #elif UNITY_IPHONE
@@ -242,6 +243,7 @@ public class AddSystem : MonoBehaviour
         else
         {
             print("Intersititial ad not ready!!");
+            ScenesLoader.loadGameScene(1);
 
         }
     }
@@ -274,6 +276,8 @@ public class AddSystem : MonoBehaviour
         {
             Debug.Log("Interstitial ad full screen content closed.");
             LoadInterstitialAd();
+            //load screen .. 
+            ScenesLoader.loadGameScene(1);
         };
         // Raised when the ad failed to open full screen content.
         ad.OnAdFullScreenContentFailed += (AdError error) =>
@@ -281,6 +285,9 @@ public class AddSystem : MonoBehaviour
             Debug.LogError("Interstitial ad failed to open full screen content " +
                            "with error : " + error);
             LoadInterstitialAd();
+            //load screen ..
+            ScenesLoader.loadGameScene(1);
+
         };
     }
 

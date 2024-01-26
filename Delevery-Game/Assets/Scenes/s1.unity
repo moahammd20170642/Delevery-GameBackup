@@ -158,7 +158,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -3432,6 +3432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079f0e8c75f8c9e42b332e6fd9712afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScenesLoader: {fileID: 1924720476}
   loadScreen: {fileID: 1785116367}
   Coinsmanager: {fileID: 1939063960}
   rewardAddImage: {fileID: 817343078}
@@ -3905,11 +3906,11 @@ RectTransform:
   - {fileID: 2045855927}
   - {fileID: 1391373543}
   - {fileID: 817343079}
+  - {fileID: 581473565}
+  - {fileID: 424870189}
   - {fileID: 1432255023}
   - {fileID: 1785116368}
   - {fileID: 715299672}
-  - {fileID: 581473565}
-  - {fileID: 424870189}
   m_Father: {fileID: 458545352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4289,18 +4290,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1924720476}
-        m_TargetAssemblyTypeName: ScenesLoader, Assembly-CSharp
-        m_MethodName: loadGameScene
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2045855929
 MonoBehaviour:
@@ -8613,7 +8602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 2
+  price: 900
   IsOwned: 0
   speed: 45
   accelaration: 31
@@ -11379,7 +11368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 2
+  price: 1000
   IsOwned: 0
   speed: 47
   accelaration: 32
@@ -11755,7 +11744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 2
+  price: 450
   IsOwned: 0
   speed: 42
   accelaration: 28
@@ -12565,7 +12554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 2
+  price: 600
   IsOwned: 0
   speed: 43
   accelaration: 29
@@ -12816,7 +12805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 2
+  price: 800
   IsOwned: 0
   speed: 44
   accelaration: 30
@@ -13105,7 +13094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 2
+  price: 400
   IsOwned: 0
   speed: 41
   accelaration: 27
@@ -13381,7 +13370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 2
+  price: 200
   IsOwned: 0
   speed: 38
   accelaration: 24
@@ -15035,7 +15024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 2
+  price: 370
   IsOwned: 0
   speed: 40
   accelaration: 26
@@ -15174,7 +15163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 2
+  price: 350
   IsOwned: 0
   speed: 39
   accelaration: 25
