@@ -17,8 +17,10 @@ public class AddSystem : MonoBehaviour
     public bool addshowed = false;  
     //public TextMeshProUGUI totalCoinsTxt;
 
-   string appId = "ca-app-pub-4935788923123536~7781382516";// "ca-app-pub-3940256099942544~3347511713";
-    
+  // string appId =// "ca-app-pub-4935788923123536~7781382516";
+   string appId = "ca-app-pub-4935788923123536~9229529271";
+
+
 
 #if UNITY_ANDROID
   string bannerId = "ca-app-pub-4935788923123536/9529578454";
@@ -26,10 +28,13 @@ public class AddSystem : MonoBehaviour
   string rewardedId = "ca-app-pub-4935788923123536/1459516749";
     //string nativeId = "ca-app-pub-3940256099942544/2247696110";
 
-    #elif UNITY_IPHONE
-       string bannerId = "ca-app-pub-3940256099942544/2934735716";
-        string interId = "ca-app-pub-3940256099942544/4411468910";
-       string rewardedId = "ca-app-pub-3940256099942544/1712485313";
+#elif UNITY_IPHONE
+    //string bannerId = "ca-app-pub-4935788923123536/8077009952";
+    string bannerId = "ca-app-pub-3940256099942544/6300978111";
+
+
+    string interId = "ca-app-pub-4935788923123536/9208786894";
+       string rewardedId = "ca-app-pub-4935788923123536/6899659657";
        //string nativeId = "ca-app-pub-3940256099942544/3986624511";
 
 #endif

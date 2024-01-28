@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using SIS;
 public class CoinsManager : MonoBehaviour
 {
     public int totalcoins;
@@ -11,8 +12,8 @@ public class CoinsManager : MonoBehaviour
 
     private void Start()
     {
-        totalcoins = PlayerPrefs.GetInt(prefs.coins, 0);
-
+        // totalcoins = PlayerPrefs.GetInt(prefs.coins, 0);
+        totalcoins = DBManager.GetCurrency("coins");
         coinsText.text = "" + totalcoins;
     }
 

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SimplePoly City - Low Poly Assets_Demo Scene 1.unity
     guid: 25b7690522b27164194fd09a84fecfb8
+  - enabled: 1
+    path: Assets/SimpleIAPSystem/Scenes/03 HorizontalScroll.unity
+    guid: 2b46b597bbb4ba8419b98ab144fd517f
   m_configObjects: {}

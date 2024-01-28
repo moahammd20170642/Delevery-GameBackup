@@ -6,6 +6,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine.UI;
 using JetBrains.Annotations;
+using SIS;
 
 public class DeleveryManager : MonoBehaviour
    {
@@ -152,7 +153,8 @@ public class DeleveryManager : MonoBehaviour
              timeText.alpha = 0;
             coins += tasks[currentTaskIndex].rewardedCoins;
             TotalCoins += tasks[currentTaskIndex].rewardedCoins;
-            PlayerPrefs.SetInt(prefs.coins, TotalCoins);
+               PlayerPrefs.SetInt(prefs.coins, TotalCoins);
+             DBManager.AddCurrency("coins", tasks[currentTaskIndex].rewardedCoins);
             //timeManager.currentTime += tasks[currentTaskIndex].taskDuration;
             AudioManager.playdropdown();
             UIManager.ActivateTaskUI(tasks[currentTaskIndex].rewardedCoins, tasks[currentTaskIndex].taskDuration);

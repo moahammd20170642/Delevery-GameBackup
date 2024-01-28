@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using SIS;
 public class Load : MonoBehaviour
 {
+    public loadShop loadShop;
     public Slider speedSlider;
     public Slider AccelerationSlider;
 
@@ -99,13 +101,14 @@ public class Load : MonoBehaviour
 
     public void Buycar()
     {
-        CurrentCoins=PlayerPrefs.GetInt(prefs.coins, 0);    
+        CurrentCoins= DBManager.GetCurrency("coins");    
 
         if (CurrentCoins >= imageObjects[currentImageIndex].GetComponent<Car>().price)
         {
             CurrentCoins -= imageObjects[currentImageIndex].GetComponent<Car>().price;
-            PlayerPrefs.SetInt(prefs.coins, CurrentCoins);
-            CoinsManager.changeCurrentCoins(CurrentCoins);
+            // PlayerPrefs.SetInt(prefs.coins, CurrentCoins);
+            DBManager.ConsumeCurrency("coins", imageObjects[currentImageIndex].GetComponent<Car>().price);
+            CoinsManager.changeCurrentCoins(DBManager.GetCurrency("coins"));
             PlayerPrefs.SetInt(imageObjects[currentImageIndex].GetComponent<Car>().carName, 1);
             buy.gameObject.SetActive(false);
             Go.gameObject.SetActive(true);
@@ -114,7 +117,8 @@ public class Load : MonoBehaviour
 
         else
         {
-            return;
+            loadShop.loadShopScene();
+            
         }
     }
 }
