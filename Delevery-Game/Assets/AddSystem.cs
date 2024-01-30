@@ -6,6 +6,7 @@ using GoogleMobileAds.Api;
 using TMPro;
 using UnityEngine.SceneManagement;
 using JetBrains.Annotations;
+using SIS;
 
 public class AddSystem : MonoBehaviour
 {
@@ -77,25 +78,32 @@ public class AddSystem : MonoBehaviour
             rewardAddImage.SetActive(false);
             loadScreen.SetActive(false);
         }
-    
-        //ShowCoins();
-        MobileAds.RaiseAdEventsOnUnityMainThread = true;
-        MobileAds.Initialize(initStatus => {
 
-            print("Ads Initialised !!");
-            LoadBannerAd();
 
-            LoadInterstitialAd();
-       
-
-            if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (DBManager.IsPurchased("no_ads") == false)
+        {
+            //ShowCoins();
+            MobileAds.RaiseAdEventsOnUnityMainThread = true;
+            MobileAds.Initialize(initStatus =>
             {
-                LoadRewardedAd();
-            }
 
-        });
+                print("Ads Initialised !!");
+                LoadBannerAd();
 
-      
+               
+
+
+                if (SceneManager.GetActiveScene().buildIndex == 0)
+                {
+                    LoadInterstitialAd();
+                    LoadRewardedAd();
+                }
+
+            });
+
+        }
+        else
+            return;
 
 
         if (SceneManager.GetActiveScene().buildIndex == 0)
@@ -358,7 +366,7 @@ public class AddSystem : MonoBehaviour
                 if (SceneManager.GetActiveScene().buildIndex == 0)
                 {
                     GrantCoins(coins);
-                    Coinsmanager.changeCurrentCoins(PlayerPrefs.GetInt(prefs.coins));
+                    Coinsmanager.changeCurrentCoins();
                     
                 }
 
@@ -455,10 +463,7 @@ public class AddSystem : MonoBehaviour
 
     void GrantCoins(int coins)
     {
-        int crrCoins = PlayerPrefs.GetInt(prefs.coins);
-        crrCoins += coins;
-        PlayerPrefs.SetInt(prefs.coins,crrCoins);
-    
+        DBManager.AddCurrency("coins", coins);
 
         //ShowCoins();
     }

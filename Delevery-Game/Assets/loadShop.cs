@@ -5,11 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class loadShop : MonoBehaviour
 {
-   public void loadShopScene() {
+    public GameObject shop , scene;
+    public void loadShopScene()
+    {
 
-        SceneManager.LoadScene(2);
+        shop.SetActive(true);
+        scene.SetActive(false);
 
     }
 
+
+    public void loadSceneff()
+    {
+
+        shop.SetActive(false);
+        scene.SetActive(true);
+
+    }
 
 }

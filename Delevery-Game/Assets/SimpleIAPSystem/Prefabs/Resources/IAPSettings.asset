@@ -66,7 +66,7 @@ MonoBehaviour:
     ID: coins
     baseAmount: 0
     maxAmount: 0
-    icon: {fileID: 21300000, guid: 815c2d1cc82c7f3468708b31017e1ab2, type: 3}
+    icon: {fileID: 6631717109063506053, guid: 7ead8ba5dc6d79f4da1cc2f449bde712, type: 3}
   productList:
   - referenceID: c5ea337a-d2d6-456f-89f5-e8c664caeda8
     ID: bundle
@@ -117,6 +117,44 @@ MonoBehaviour:
       label: 
     nextUpgrade:
       rid: -2
+  - referenceID: 17ea6cfd-a02a-493f-b3d3-53a3496c8f7a
+    ID: no_ads
+    storeIDs:
+    - active: 1
+      store: GooglePlay
+      ID: no_ads_v2
+    customBilling:
+      active: 0
+      provider: 0
+    category:
+      rid: 5
+    type: 1
+    title: Remove ads
+    description: Remove ads
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 65bc96f99ca43b646a50e06c9d8152e4, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: $2.99
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 7
+      amount: 1
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
   - referenceID: c2c7e2c7-0304-45e4-9832-06eb199de3f3
     ID: Coins100
     storeIDs:
@@ -135,11 +173,11 @@ MonoBehaviour:
     category:
       rid: 5
     type: 0
-    title: 'small coins pack '
-    description: 100 coins for virtual purchases.
+    title: '100 coins '
+    description: 100 coins
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 815c2d1cc82c7f3468708b31017e1ab2, type: 3}
+    icon: {fileID: 6631717109063506053, guid: 7ead8ba5dc6d79f4da1cc2f449bde712, type: 3}
     priceList:
     - type: 0
       currency:
@@ -173,11 +211,11 @@ MonoBehaviour:
     category:
       rid: 5
     type: 0
-    title: coin pack
-    description: 250 coins for virtual purchases.
+    title: 250 coins
+    description: 250 coins
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 815c2d1cc82c7f3468708b31017e1ab2, type: 3}
+    icon: {fileID: 6631717109063506053, guid: 7ead8ba5dc6d79f4da1cc2f449bde712, type: 3}
     priceList:
     - type: 0
       currency:
@@ -199,23 +237,20 @@ MonoBehaviour:
       label: 
     nextUpgrade:
       rid: -2
-  - referenceID: 5f3e468b-59a1-4601-972a-31892e27ab15
-    ID: big_coin_pack
-    storeIDs:
-    - active: 1
-      store: SteamStore
-      ID: 300
+  - referenceID: 9af09c25-bf2e-453b-a9d0-c65fd3cd4af6
+    ID: Big_coin_pack
+    storeIDs: []
     customBilling:
       active: 0
       provider: 0
     category:
-      rid: 5
+      rid: 428716728416468994
     type: 0
-    title: big coin pack
-    description: 600 coins for virtual purchases.
+    title: 600 coins
+    description: 600 coins
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 815c2d1cc82c7f3468708b31017e1ab2, type: 3}
+    icon: {fileID: 6631717109063506053, guid: 7ead8ba5dc6d79f4da1cc2f449bde712, type: 3}
     priceList:
     - type: 0
       currency:
@@ -227,7 +262,7 @@ MonoBehaviour:
     rewardList:
     - type: 1
       currency:
-        rid: 6
+        rid: 428716728416468995
       product:
         rid: -2
       amount: 600
@@ -237,23 +272,23 @@ MonoBehaviour:
       label: 
     nextUpgrade:
       rid: -2
-  - referenceID: 17ea6cfd-a02a-493f-b3d3-53a3496c8f7a
-    ID: no_ads
+  - referenceID: 5f3e468b-59a1-4601-972a-31892e27ab15
+    ID: Mega_coin_pack
     storeIDs:
     - active: 1
-      store: GooglePlay
-      ID: no_ads_v2
+      store: SteamStore
+      ID: 300
     customBilling:
       active: 0
       provider: 0
     category:
       rid: 5
-    type: 1
-    title: no ads
-    description: Enjoy the game without ads
-    discount: 0
+    type: 0
+    title: 1000 coins
+    description: '1000 coins '
+    discount: 1
     fetch: 1
-    icon: {fileID: 21300000, guid: 65bc96f99ca43b646a50e06c9d8152e4, type: 3}
+    icon: {fileID: 6631717109063506053, guid: 7ead8ba5dc6d79f4da1cc2f449bde712, type: 3}
     priceList:
     - type: 0
       currency:
@@ -261,14 +296,14 @@ MonoBehaviour:
       product:
         rid: -2
       amount: 0
-      realPrice: $2.99
+      realPrice: $5.99
     rewardList:
-    - type: 2
+    - type: 1
       currency:
-        rid: -2
+        rid: 6
       product:
-        rid: 7
-      amount: 1
+        rid: -2
+      amount: 1000
       realPrice: 
     requirement:
       pairs: []
@@ -1737,3 +1772,20 @@ MonoBehaviour:
           label: 
         nextUpgrade:
           rid: -2
+    - rid: 428716728416468994
+      type: {class: IAPCategory, ns: SIS, asm: Assembly-CSharp}
+      data:
+        referenceID: 3097ec21-dab5-4a80-82d4-1cfe4b4c54e7
+        ID: Category 00
+        storeIDs: []
+        customBilling:
+          active: 0
+          provider: 0
+    - rid: 428716728416468995
+      type: {class: IAPCurrency, ns: SIS, asm: Assembly-CSharp}
+      data:
+        referenceID: 220be08c-be6d-4e63-a0c7-48b629257b77
+        ID: coins
+        baseAmount: 0
+        maxAmount: 0
+        icon: {fileID: 21300000, guid: 815c2d1cc82c7f3468708b31017e1ab2, type: 3}

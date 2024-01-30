@@ -159,7 +159,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.SalahGames.DeleveryHero
+    Android: com.SiwarGames.DeliveryHero
     Standalone: com.Siwar-Games.Delivery-Hero
     iPhone: com.Siwar-Games.Delivery-Hero
   buildNumber:

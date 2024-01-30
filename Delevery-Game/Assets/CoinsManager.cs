@@ -17,10 +17,10 @@ public class CoinsManager : MonoBehaviour
         coinsText.text = "" + totalcoins;
     }
 
-    public void changeCurrentCoins(int coins)
+    public void changeCurrentCoins()
     {
-        totalcoins = coins;
-        coinsText.text = "" + totalcoins;
+      
+        coinsText.text = "" + DBManager.GetCurrency("coins");
 
 
     }

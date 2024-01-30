@@ -28,7 +28,7 @@ public class Load : MonoBehaviour
         PlayerPrefs.SetInt("FrstCar", 1);
 
 
-        CurrentCoins = PlayerPrefs.GetInt(prefs.coins, 0);
+        CurrentCoins = DBManager.GetCurrency("coins");
         currentImageIndex = PlayerPrefs.GetInt(prefs.SelectedCar,0);
         ShowCurrentImage();
 
@@ -108,7 +108,7 @@ public class Load : MonoBehaviour
             CurrentCoins -= imageObjects[currentImageIndex].GetComponent<Car>().price;
             // PlayerPrefs.SetInt(prefs.coins, CurrentCoins);
             DBManager.ConsumeCurrency("coins", imageObjects[currentImageIndex].GetComponent<Car>().price);
-            CoinsManager.changeCurrentCoins(DBManager.GetCurrency("coins"));
+            CoinsManager.changeCurrentCoins();
             PlayerPrefs.SetInt(imageObjects[currentImageIndex].GetComponent<Car>().carName, 1);
             buy.gameObject.SetActive(false);
             Go.gameObject.SetActive(true);
