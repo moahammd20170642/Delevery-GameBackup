@@ -791,7 +791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 150
+  m_text: 10000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -818,8 +818,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50.2
-  m_fontSizeBase: 50.2
+  m_fontSize: 48.6
+  m_fontSizeBase: 48.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1866,7 +1866,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10000
+  m_text: '100000
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -2475,7 +2477,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26.8, y: 5.8}
+  m_AnchoredPosition: {x: -40.5, y: 5.8}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752791756
@@ -11154,7 +11156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 900
+  price: 8000
   IsOwned: 0
   speed: 45
   accelaration: 31
@@ -13599,7 +13601,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.157668, z: 0}
+  m_ConnectedAnchor: {x: -0.05078125, y: -0.033081055, z: -0.14512}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -14581,7 +14583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1000
+  price: 10000
   IsOwned: 0
   speed: 47
   accelaration: 32
@@ -15093,7 +15095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 450
+  price: 2000
   IsOwned: 0
   speed: 42
   accelaration: 28
@@ -15216,7 +15218,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.12469959, z: 0}
+  m_ConnectedAnchor: {x: -0.05078125, y: 0.011474609, z: -0.14512}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -16120,7 +16122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 600
+  price: 4000
   IsOwned: 0
   speed: 43
   accelaration: 29
@@ -16440,7 +16442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 800
+  price: 6000
   IsOwned: 0
   speed: 44
   accelaration: 30
@@ -16904,7 +16906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bed61b51a61584289136f4a7711d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 400
+  price: 1000
   IsOwned: 0
   speed: 41
   accelaration: 27
@@ -20050,7 +20052,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.14006805, z: 0}
+  m_ConnectedAnchor: {x: -0.05078125, y: -0.009338379, z: -0.14512}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:

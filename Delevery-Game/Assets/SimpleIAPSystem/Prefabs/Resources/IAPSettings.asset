@@ -156,7 +156,7 @@ MonoBehaviour:
     nextUpgrade:
       rid: -2
   - referenceID: c2c7e2c7-0304-45e4-9832-06eb199de3f3
-    ID: Coins100
+    ID: Coins
     storeIDs:
     - active: 1
       store: GooglePlay
@@ -173,8 +173,8 @@ MonoBehaviour:
     category:
       rid: 5
     type: 0
-    title: '100 coins '
-    description: 100 coins
+    title: '1000 coins '
+    description: 1000 coins
     discount: 0
     fetch: 1
     icon: {fileID: 6631717109063506053, guid: 7ead8ba5dc6d79f4da1cc2f449bde712, type: 3}
@@ -185,14 +185,14 @@ MonoBehaviour:
       product:
         rid: -2
       amount: 0
-      realPrice: $0.99
+      realPrice: $1.99
     rewardList:
     - type: 1
       currency:
         rid: 6
       product:
         rid: -2
-      amount: 100
+      amount: 1000
       realPrice: 
     requirement:
       pairs: []
@@ -211,8 +211,8 @@ MonoBehaviour:
     category:
       rid: 5
     type: 0
-    title: 250 coins
-    description: 250 coins
+    title: 2500 coins
+    description: 2500 coins
     discount: 0
     fetch: 1
     icon: {fileID: 6631717109063506053, guid: 7ead8ba5dc6d79f4da1cc2f449bde712, type: 3}
@@ -223,14 +223,14 @@ MonoBehaviour:
       product:
         rid: -2
       amount: 0
-      realPrice: $1.99
+      realPrice: $3.99
     rewardList:
     - type: 1
       currency:
         rid: 6
       product:
         rid: -2
-      amount: 250
+      amount: 2500
       realPrice: 
     requirement:
       pairs: []
@@ -246,8 +246,8 @@ MonoBehaviour:
     category:
       rid: 428716728416468994
     type: 0
-    title: 600 coins
-    description: 600 coins
+    title: 5000 coins
+    description: 5000 coins
     discount: 0
     fetch: 1
     icon: {fileID: 6631717109063506053, guid: 7ead8ba5dc6d79f4da1cc2f449bde712, type: 3}
@@ -258,14 +258,14 @@ MonoBehaviour:
       product:
         rid: -2
       amount: 0
-      realPrice: $4.99
+      realPrice: $7.99
     rewardList:
     - type: 1
       currency:
         rid: 428716728416468995
       product:
         rid: -2
-      amount: 600
+      amount: 5000
       realPrice: 
     requirement:
       pairs: []
@@ -284,8 +284,8 @@ MonoBehaviour:
     category:
       rid: 5
     type: 0
-    title: 1000 coins
-    description: '1000 coins '
+    title: 10000 coins
+    description: 10000 coins
     discount: 1
     fetch: 1
     icon: {fileID: 6631717109063506053, guid: 7ead8ba5dc6d79f4da1cc2f449bde712, type: 3}
@@ -296,14 +296,14 @@ MonoBehaviour:
       product:
         rid: -2
       amount: 0
-      realPrice: $5.99
+      realPrice: $11.99
     rewardList:
     - type: 1
       currency:
         rid: 6
       product:
         rid: -2
-      amount: 1000
+      amount: 10000
       realPrice: 
     requirement:
       pairs: []
