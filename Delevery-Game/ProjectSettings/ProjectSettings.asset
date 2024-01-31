@@ -137,7 +137,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 0.71
+  bundleVersion: 0.72
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -859,12 +859,12 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: 
-    Standalone: 
-    WebGL: 
-    Windows Store Apps: 
-    iPhone: 
-    tvOS: 
+    Android: SIS_IAP
+    Standalone: SIS_IAP
+    WebGL: SIS_IAP
+    Windows Store Apps: SIS_IAP
+    iPhone: SIS_IAP
+    tvOS: SIS_IAP
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -953,7 +953,7 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
-    Purchasing: 1
+    Purchasing: 0
     UNet: 1
   luminIcon:
     m_Name: 

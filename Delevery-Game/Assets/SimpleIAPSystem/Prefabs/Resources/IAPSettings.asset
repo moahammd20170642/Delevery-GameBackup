@@ -156,7 +156,7 @@ MonoBehaviour:
     nextUpgrade:
       rid: -2
   - referenceID: c2c7e2c7-0304-45e4-9832-06eb199de3f3
-    ID: Coins
+    ID: coins
     storeIDs:
     - active: 1
       store: GooglePlay
@@ -238,7 +238,7 @@ MonoBehaviour:
     nextUpgrade:
       rid: -2
   - referenceID: 9af09c25-bf2e-453b-a9d0-c65fd3cd4af6
-    ID: Big_coin_pack
+    ID: big_coin_pack
     storeIDs: []
     customBilling:
       active: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
     nextUpgrade:
       rid: -2
   - referenceID: 5f3e468b-59a1-4601-972a-31892e27ab15
-    ID: Mega_coin_pack
+    ID: mega_coin_pack
     storeIDs:
     - active: 1
       store: SteamStore
