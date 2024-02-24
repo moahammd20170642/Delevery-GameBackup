@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using Unity.VisualScripting;
 using UnityEngine;
 using DG.Tweening;
@@ -47,6 +48,11 @@ public class DeleveryManager : MonoBehaviour
     public RectTransform gameover;
     public Button playAddButton;
     public TextMeshProUGUI PlusText;
+
+
+
+   
+    
     void Start()
     {
           //TaskFaild = false;
@@ -69,6 +75,7 @@ public class DeleveryManager : MonoBehaviour
 
 
 
+    
 
     public void FillData()
     {
@@ -80,6 +87,8 @@ public class DeleveryManager : MonoBehaviour
             tasks.Add(task);    
             
         }
+
+        tasks.Shuffle();
         
 
     }
@@ -233,5 +242,23 @@ public class DeleveryManager : MonoBehaviour
     public void SetTaskTime()
     {
         timeManager.currentTime = tasks[currentTaskIndex].taskDuration;
+    }
+}
+public static class ListExtensions
+{
+    private static readonly System.Random rng = new System.Random();
+
+    // Fisher-Yates shuffle algorithm
+    public static void Shuffle<T>(this IList<T> list)
+    {
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = rng.Next(n + 1);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
     }
 }
