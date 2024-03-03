@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ScenesLoader : MonoBehaviour
 {
     // Start is called before the first frame update
-    public AddSystem ad;
+    //public AddSystem ad;
     public Load load;
    public void loadGameScene(int x )
     {
@@ -19,7 +19,7 @@ public class ScenesLoader : MonoBehaviour
     }
     public void loadAndShow()
     {
-        ad.ShowInterstitialAd();
+        //ad.ShowInterstitialAd();
         loadGameScene(1);
 
     }

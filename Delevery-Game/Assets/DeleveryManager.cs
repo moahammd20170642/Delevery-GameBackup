@@ -43,7 +43,7 @@ public class DeleveryManager : MonoBehaviour
     List<Task> tasks = new List<Task>();
     // Start is called before the first frame update
    int taskcounter =1 ;
-    public AddSystem addSystem;
+    //public AddSystem addSystem;
     public TextMeshProUGUI grantedcoins;
     public RectTransform gameover;
     public Button playAddButton;
@@ -121,7 +121,7 @@ public class DeleveryManager : MonoBehaviour
     {
         //coins = coins * 2;
 
-        addSystem.ShowRewardedAd(coins);
+        //addSystem.ShowRewardedAd(coins);
 
         playAddButton.gameObject.SetActive(false);
 

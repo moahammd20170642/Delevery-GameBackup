@@ -11,7 +11,7 @@ public class Load : MonoBehaviour
     public Slider speedSlider;
     public Slider AccelerationSlider;
 
-    public AddSystem AddSystem;
+    //public AddSystem AddSystem;
     public List<GameObject> imageObjects;
     public   int currentImageIndex = 0;
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7112568, g: 0.8500665, b: 0.8421706, a: 1}
+  m_IndirectSpecularColor: {r: 0.71125656, g: 0.8500661, b: 0.84217066, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -2356,7 +2356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &67302913
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25473,7 +25473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74427cd238f07f74785dadd25b71375b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 6648680405160580446}
   targetObject: {x: 0, y: 0, z: 0}
 --- !u!65 &557121393
 BoxCollider:
@@ -34447,7 +34446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74427cd238f07f74785dadd25b71375b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 6648680405160580446}
   targetObject: {x: 0, y: 0, z: 0}
 --- !u!65 &690056614
 BoxCollider:
@@ -50105,7 +50103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74427cd238f07f74785dadd25b71375b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 6648680405160580446}
   targetObject: {x: 0, y: 0, z: 0}
 --- !u!65 &911377588
 BoxCollider:
@@ -57111,11 +57108,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deleveryManager: {fileID: 6648680405160580446}
-  GasButton: {fileID: 2723712650225713343}
-  BreakButton: {fileID: 863167308034388890}
-  rightButton: {fileID: 7081660766960423103}
-  leftButton: {fileID: 5456466361717868564}
-  HandbreakButton: {fileID: 4408744112885371933}
   movementMode: 0
   GroundCheck: 0
   drivableSurface:
@@ -71876,11 +71868,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deleveryManager: {fileID: 6648680405160580446}
-  GasButton: {fileID: 2723712650225713343}
-  BreakButton: {fileID: 863167308034388890}
-  rightButton: {fileID: 7081660766960423103}
-  leftButton: {fileID: 5456466361717868564}
-  HandbreakButton: {fileID: 4408744112885371933}
   movementMode: 0
   GroundCheck: 0
   drivableSurface:
@@ -90107,11 +90094,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deleveryManager: {fileID: 6648680405160580446}
-  GasButton: {fileID: 2723712650225713343}
-  BreakButton: {fileID: 863167308034388890}
-  rightButton: {fileID: 7081660766960423103}
-  leftButton: {fileID: 5456466361717868564}
-  HandbreakButton: {fileID: 4408744112885371933}
   movementMode: 0
   GroundCheck: 0
   drivableSurface:
@@ -118762,6 +118744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupSound: {fileID: 593135638}
   dropdownsound: {fileID: 488132924}
+  taskFaild: {fileID: 0}
 --- !u!1001 &2024730017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123259,6 +123242,7 @@ MonoBehaviour:
   UiTaskTime: {fileID: 1658456912}
   GrantedcoinsUI: {fileID: 1962349861}
   pauseMenuUI: {fileID: 1207647613}
+  taskfaild: {fileID: 0}
 --- !u!1 &2471895847897915337
 GameObject:
   m_ObjectHideFlags: 0
@@ -125105,7 +125089,6 @@ MonoBehaviour:
   - {fileID: 4896148676333363582, guid: 3d667002ae1a98e459911949822f2a13, type: 3}
   - {fileID: 4896148676333363582, guid: 826e4640b5a0b864a89673a4f8f2485c, type: 3}
   doubledCoins: 0
-  addSystem: {fileID: 2000837188}
   grantedcoins: {fileID: 1962349861}
   gameover: {fileID: 43846249}
   playAddButton: {fileID: 544640031}
