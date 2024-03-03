@@ -88,7 +88,7 @@ public class DeleveryManager : MonoBehaviour
             
         }
 
-        tasks.Shuffle();
+        //tasks.Shuffle();
         
 
     }

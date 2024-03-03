@@ -117977,10 +117977,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079f0e8c75f8c9e42b332e6fd9712afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coinsmanager: {fileID: 0}
-  deleveryManager: {fileID: 6648680405160580446}
-  addshowed: 0
-  appId: ca-app-pub-1385093244148841~5602672977
 --- !u!1001 &2003595123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -125073,21 +125069,21 @@ MonoBehaviour:
   - {fileID: 1569891457}
   - {fileID: 1437879143}
   foodPrefab:
-  - {fileID: 4896148676333363582, guid: b103cd3aafa03b54eab5b753fe730ca1, type: 3}
-  - {fileID: 4896148676333363582, guid: 8dd419f208da7a04795c9779dee045b1, type: 3}
-  - {fileID: 4896148676333363582, guid: c6609d6b97e71cb4da5ab0212d0d0031, type: 3}
-  - {fileID: 4896148676333363582, guid: 6340051abbc173c46aea70f70d54278a, type: 3}
-  - {fileID: 4896148676333363582, guid: 36ba65546d1cfe240985dc0ae16501a7, type: 3}
-  - {fileID: 4896148676333363582, guid: e0ca0c514c0a2004fbbf213579145fac, type: 3}
-  - {fileID: 4896148676333363582, guid: 74914ad6c1afd8546b1ec5519d788337, type: 3}
-  - {fileID: 4896148676333363582, guid: 5aec3130a43bd4b49b8a50f10a70f011, type: 3}
-  - {fileID: 4896148676333363582, guid: 563f0652b4c435e48924f0aac2e661f5, type: 3}
-  - {fileID: 4896148676333363582, guid: b6842783af6b4e34aa64ee08defc97a4, type: 3}
-  - {fileID: 4896148676333363582, guid: 57bc519a3c166084999e2f17358fb083, type: 3}
-  - {fileID: 4896148676333363582, guid: 24828e01821ffc1439070b635a00ba32, type: 3}
-  - {fileID: 4896148676333363582, guid: df33d74d8fa4c5a44b31832962f5fbd5, type: 3}
-  - {fileID: 4896148676333363582, guid: 3d667002ae1a98e459911949822f2a13, type: 3}
-  - {fileID: 4896148676333363582, guid: 826e4640b5a0b864a89673a4f8f2485c, type: 3}
+  - {fileID: 4896148676333363582, guid: 0f650fbf91a19d3459a4cca1bea67033, type: 3}
+  - {fileID: 4896148676333363582, guid: 22fdd2bef58111749bdabe7d86e03897, type: 3}
+  - {fileID: 4896148676333363582, guid: 479c5cda80919fe4dafc9c92819295df, type: 3}
+  - {fileID: 4896148676333363582, guid: 2c1c6eebea94af543a19a581323de126, type: 3}
+  - {fileID: 4896148676333363582, guid: eff87ce14565d894d82cc92d641167e3, type: 3}
+  - {fileID: 4896148676333363582, guid: 4e220ea2a7657b344b3c8be669168f55, type: 3}
+  - {fileID: 4896148676333363582, guid: da2fe906eccc7914587c4b3e21f69796, type: 3}
+  - {fileID: 4896148676333363582, guid: 8d0d84427017a764ba721420e82b5d94, type: 3}
+  - {fileID: 4896148676333363582, guid: f70c8b9f8adee304aad4ea2b2b133ade, type: 3}
+  - {fileID: 4896148676333363582, guid: 3f84af4644cbc1d4b891a2e04fb9b666, type: 3}
+  - {fileID: 4896148676333363582, guid: 7b5909777abb7da439442e74bf382c9b, type: 3}
+  - {fileID: 4896148676333363582, guid: fe010702804de764c81806cb2625b8c1, type: 3}
+  - {fileID: 4896148676333363582, guid: 680526fbb3332314593395d35d1881d6, type: 3}
+  - {fileID: 4896148676333363582, guid: 009069cce0bc54845ae825fe88069b39, type: 3}
+  - {fileID: 4896148676333363582, guid: 4924dfb66cd628e41b69c2e250554048, type: 3}
   doubledCoins: 0
   grantedcoins: {fileID: 1962349861}
   gameover: {fileID: 43846249}
