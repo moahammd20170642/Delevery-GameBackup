@@ -9,4 +9,4 @@ The program shipped and build successfully on android , and you can download the
 
 ## Gameplay Video
 
-For a quick overview of the gameplay, check out the [Gameplay Video]([https://youtu.be/6fPx6Mk0K6Y](https://youtu.be/EMhrxieXGLI) .
+For a quick overview of the gameplay, check out the [Gameplay Video](https://youtu.be/6fPx6Mk0K6Y](https://youtu.be/EMhrxieXGLI) .
